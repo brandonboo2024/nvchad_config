@@ -21,6 +21,10 @@ require("lazy").setup({
     branch = "v2.5",
     import = "nvchad.plugins",
   },
+  {
+    "github/copilot.vim",
+    event = "InsertEnter"
+  },
 
   { import = "plugins" },
 }, lazy_config)
@@ -35,3 +39,5 @@ require "autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+vim.o.scrolloff = 999

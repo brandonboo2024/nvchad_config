@@ -13,6 +13,18 @@ return {
     end,
   },
 
+  {
+    "CopilotC-Nvim/CopilotChat.nvim",
+    dependencies = {
+      {"nvim-lua/plenary.nvim", branch = "master"},
+    },
+    build = "make tiktoken",
+    cmd = {"CopilotChat", "CopilotChatToggle", "CopilotChatModels"},
+    config = function()
+      require("CopilotChat").setup(require "configs.copilotchat")
+    end,
+  },
+
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 
