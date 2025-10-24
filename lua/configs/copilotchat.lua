@@ -59,7 +59,7 @@ return {
 
   system_prompt = require('CopilotChat.config.prompts').COPILOT_INSTRUCTIONS.system_prompt, -- System prompt to use (can be specified manually in prompt via /).
 
-  model = 'gpt-4.1', -- Default model to use, see ':CopilotChatModels' for available models (can be specified manually in prompt via $).
+  model = 'gemini-2.5-pro', -- Default model to use, see ':CopilotChatModels' for available models (can be specified manually in prompt via $).
   tools = nil, -- Default tool or array of tools (or groups) to share with LLM (can be specified manually in prompt via @).
   resources = 'selection', -- Default resources to share with LLM (can be specified manually in prompt via #).
   sticky = nil, -- Default sticky prompt or array of sticky prompts to use at start of every new chat (can be specified manually in prompt via >).
@@ -74,10 +74,10 @@ return {
   -- default window options
   window = {
     layout = 'float',
-    width = 80, -- Fixed width in columns
-    height = 20, -- Fixed height in rows
+    width = 110, -- Fixed width in columns
+    height = 30, -- Fixed height in rows
     border = 'rounded', -- 'single', 'double', 'rounded', 'solid'
-    title = '🤖 AI Assistant',
+    title = 'STONKS',
     zindex = 100, -- Ensure window stays on top
   },
   headers = {
