@@ -78,7 +78,7 @@ return {
     height = 30, -- Fixed height in rows
     border = 'rounded', -- 'single', 'double', 'rounded', 'solid'
     title = 'STONKS',
-    zindex = 100, -- Ensure window stays on top
+    zindex = 2, -- Ensure window stays on top
   },
   headers = {
     user = '👤 You',
@@ -87,7 +87,7 @@ return {
   },
 
   separator = '━━',
-  auto_fold = true, -- Automatically folds non-assistant messages
+  auto_fold = false, -- Automatically folds non-assistant messages
 
   show_help = true, -- Shows help message as virtual lines when waiting for user input
   show_folds = false, -- Shows folds for sections in chat

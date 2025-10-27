@@ -25,6 +25,12 @@ return {
     end,
   },
 
+  {
+   "sphamba/smear-cursor.nvim",
+    event = "VeryLazy",
+    opts = require("configs.smear"),
+  },
+
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 
